@@ -14,9 +14,5 @@ if [ -a ~/.bash_aliases ]
 	then
 		mv ~/.bash_aliases ~/.bash_aliases1
 fi
-if [-a ~/.git_shell.sh ]
-	then
-
-fi
 ln -sr scripts/.bash_aliases ~/.bash_aliases
 ln -sfr scripts/.git_shell.sh ~/.git_shell.sh
