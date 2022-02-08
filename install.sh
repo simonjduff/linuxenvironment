@@ -15,4 +15,4 @@ if [ -a ~/.bash_aliases ]
 		mv ~/.bash_aliases ~/.bash_aliases1
 fi
 ln -sr scripts/.bash_aliases ~/.bash_aliases
-ln -sfr scripts/.git_shell.sh ~/.git_shell.sh
+ln -sfr scripts/.git_prompt.sh ~/.git_prompt.sh
