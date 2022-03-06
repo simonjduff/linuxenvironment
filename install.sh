@@ -17,3 +17,5 @@ if [ -a ~/.bash_aliases ]
 fi
 ln -sfr ./scripts/.bash_aliases ~/.bash_aliases
 ln -sfr ./scripts/.git_prompt.sh ~/.git_prompt.sh
+
+git config --global core.editor vim
