@@ -1,6 +1,9 @@
+#!/bin/bash
 [ ! -d "$HOME/.environmentVariables" ] && mkdir ~/.environmentVariables
+[ ! -d "$HOME/.startupScripts" ] && mkdir ~/.startupScripts
 
 [ "$(ls -A ~/.environmentVariables)" ] && source <(cat ~/.environmentVariables/*.sh)
+[ "$(ls -A ~/.startupScripts)" ] && source <(cat ~/.startupScripts/*.sh)
 source ~/.git_prompt.sh
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
@@ -141,3 +144,6 @@ if [ -f "${SSH_ENV}" ]; then
 else
     start_agent;
 fi
+
+# Set color of directories in ls
+LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
